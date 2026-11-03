@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Generative AI using large language models",
+  "intended_application": "Draft customer-support responses for human review before they are sent to customers",
+  "organization": "Mid-sized regional financial institution",
+  "industry_sector": "Financial services and banking",
+  "business_need": "Reduce customer-support response time and employee workload while maintaining service quality, accuracy, and regulatory compliance",
+  "users_stakeholders": "Customer service representatives, customers, compliance officers, risk management teams, IT staff, information security staff, and senior management",
+  "adoption_posture": "Moderate and fast-follower",
+  "capabilities_constraints": "The organization has standard enterprise IT and compliance capabilities but limited internal generative AI expertise. It does not yet have mature AI monitoring, evaluation, prompt governance, or model-risk-management processes. The organization would require vendor support for implementation and has limited staff available to supervise a pilot.",
+  "risk_consequence_context": "Incorrect, misleading, privacy-compromising, or noncompliant customer responses could create regulatory, financial, operational, and reputational consequences. Although human review could reduce some risk, the organization has not yet demonstrated that reviewers can consistently identify model errors or that proposed controls would meet compliance requirements.",
+  "management_question": "Should the organization adopt, conduct a bounded experiment with, monitor, defer, or reject generative AI for customer-support response drafting at this time?",
+  "time_horizon": "Management is deciding what action to take during the next 12 months",
+  "additional_context": "Decision-critical evidence is currently incomplete. The organization does not yet have reliable organization-specific data on model accuracy, hallucination frequency, reviewer effectiveness, privacy exposure, compliance approval, implementation cost, or productivity benefit for this use case. Management has also not selected a vendor or defined minimum performance and risk thresholds for a pilot."
+}

@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Generative AI using large language models",
+  "intended_application": "Draft customer-support responses for human review before they are sent to customers",
+  "organization": "Digital-first financial technology startup",
+  "industry_sector": "Financial technology",
+  "business_need": "Reduce customer-support response time and employee workload while maintaining service quality and accuracy",
+  "users_stakeholders": "Customer service representatives, customers, product managers, compliance staff, engineering teams, and senior management",
+  "adoption_posture": "Aggressive and leading-edge",
+  "capabilities_constraints": "The organization has strong AI engineering capabilities, rapid experimentation practices, dedicated monitoring systems, and experience deploying emerging technologies. Human review is required during pilots, but the organization is willing to accept controlled technical uncertainty when experiments are limited in scope and reversible.",
+  "risk_consequence_context": "Customer communication errors could still create financial and reputational consequences, but experimentation would be limited to a small supervised user group with mandatory human review. The pilot could be quickly stopped or reversed if performance is unacceptable.",
+  "management_question": "Should the organization adopt, conduct a bounded experiment with, monitor, defer, or reject generative AI for customer-support response drafting at this time?",
+  "time_horizon": "Management is deciding what action to take during the next 12 months",
+  "additional_context": "Management actively encourages controlled experimentation with emerging technologies and is willing to conduct a limited pilot when risks can be contained, measured, and reversed."
+}

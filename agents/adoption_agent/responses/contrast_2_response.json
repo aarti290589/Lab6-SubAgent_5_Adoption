@@ -1,0 +1,72 @@
+{
+"agent": {
+"name": "Emerging Technology Adoption Agent",
+"specialty": "Emerging Technology Adoption",
+"version": "0.1-student"
+},
+"analytical_question": "Should a mid-sized regional financial institution adopt, conduct a bounded experiment with, monitor, defer, or reject generative AI using large language models for drafting customer-support responses for human review during the next 12 months?",
+"general_et_finding": "Generative AI using large language models is sufficiently mature to support assistive text-generation applications, including drafting customer-support responses, and empirical evidence shows that generative-AI assistance can improve customer-support productivity. However, the technology continues to present material risks including inaccurate or fabricated outputs, privacy and information-security exposure, inconsistent performance, and overreliance on generated content. These risks do not make the technology generally unsuitable, but they make governance, evaluation, monitoring, and human oversight important when outputs could materially affect customers.",
+"application_finding": "Drafting customer-support responses for human review is a comparatively suitable application because the technology's text-generation capabilities directly match the task and human review creates an opportunity to detect errors before responses reach customers. Evidence from customer-support environments indicates potential productivity benefits. However, the value and safety of the application depend on whether reviewers can reliably identify inaccurate, misleading, privacy-compromising, or noncompliant content. Evidence from consumer finance also shows that automated customer-service systems can provide inaccurate or ineffective assistance and can create consumer harm when controls or escalation mechanisms are inadequate.",
+"organization_specific_finding": "For this mid-sized regional financial institution, immediate production adoption is not justified and a responsible bounded pilot is not yet adequately specified. The organization has limited generative-AI expertise, immature AI evaluation and monitoring processes, no selected vendor, limited staff for pilot supervision, and no established minimum accuracy, privacy, compliance, reviewer-effectiveness, or productivity thresholds. These deficiencies are particularly important in financial services, where incorrect or noncompliant customer communications can have meaningful consumer, regulatory, operational, and financial consequences. Human review makes eventual experimentation more plausible, but the organization has not demonstrated that reviewers can consistently detect model errors. The appropriate current posture is therefore DEFER while the organization establishes the prerequisites for a controlled pilot rather than proceeding directly to implementation.",
+"evidence": [
+{
+"claim": "Generative-AI assistance has demonstrated measurable productivity benefits in a customer-support environment.",
+"source_or_reference": "Brynjolfsson, Li, and Raymond, 'Generative AI at Work', National Bureau of Economic Research https://www.nber.org/papers/w31161",
+"date_or_recency": "Working paper issued April 2023 and revised November 2023; published version reported by NBER in 2025",
+"evidence_type": "Empirical field research",
+"notes": "The study examined 5,179 customer-support agents and reported an average productivity increase of approximately 14 percent from access to a generative-AI conversational assistant. The evidence supports plausible value for customer-support assistance but is not specific to this financial institution or its compliance environment."
+},
+{
+"claim": "Generative AI presents distinctive risks that organizations should identify, measure, manage, and monitor rather than assuming that general-purpose model capability establishes safe organizational use.",
+"source_or_reference": "NIST, 'Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile', NIST AI 600-1 https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+"date_or_recency": "Published July 26, 2024; current NIST generative-AI risk-management guidance reviewed in November 2026",
+"evidence_type": "Authoritative government risk-management guidance",
+"notes": "NIST provides a cross-sector framework for identifying and managing risks specific to generative AI. This supports requiring structured evaluation, governance, monitoring, and risk controls before consequential organizational deployment."
+},
+{
+"claim": "Automated and AI-enabled customer-service systems in financial services can provide inaccurate or ineffective assistance and may create legal, privacy, security, customer-trust, and consumer-harm risks.",
+"source_or_reference": "Consumer Financial Protection Bureau, 'Chatbots in consumer finance' https://www.consumerfinance.gov/data-research/research-reports/chatbots-in-consumer-finance/chatbots-in-consumer-finance/",
+"date_or_recency": "Published June 6, 2023",
+"evidence_type": "Financial-services regulator research and consumer-market evidence",
+"notes": "The CFPB found that financial institutions increasingly use chatbot technologies, including systems based on large language models, while warning that poorly deployed systems can provide inaccurate information, impede problem resolution, create privacy and security concerns, undermine customer trust, and potentially contribute to violations of consumer financial laws."
+},
+{
+"claim": "Current federal banking guidance emphasizes risk-based governance, ongoing monitoring, outcome analysis, appropriate expertise, and controls tailored to the significance and use of technological systems, although the revised model-risk guidance explicitly excludes generative and agentic AI models from its formal scope.",
+"source_or_reference": "Federal Reserve, OCC, and FDIC, 'Revised Guidance on Model Risk Management', SR 26-2 https://www.federalreserve.gov/supervisionreg/srletters/sr2602.htm",
+"date_or_recency": "Issued April 17, 2026",
+"evidence_type": "Current interagency banking supervisory guidance",
+"notes": "The revised guidance states that generative and agentic AI models are outside its formal scope, so it should not be represented as directly governing this LLM application. It nevertheless states that banking organizations' broader risk-management and governance practices should determine appropriate governance and controls for tools not covered by the guidance. This supports, but does not independently mandate, strong internal governance before deployment."
+}
+],
+"contrary_evidence_or_limitations": [
+"Empirical customer-support research demonstrates meaningful productivity benefits from generative-AI assistance, suggesting that indefinite avoidance of the technology could sacrifice legitimate efficiency opportunities.",
+"Human review before transmission substantially improves reversibility compared with a fully autonomous customer-facing system because generated drafts can be rejected or corrected before reaching customers.",
+"The CFPB evidence addresses chatbot deployment broadly and does not directly measure this organization's proposed human-reviewed drafting workflow, so its reported harms cannot automatically be assumed to occur at the same rate in this application.",
+"The available evidence does not establish this organization's expected accuracy, hallucination rate, productivity gain, reviewer error-detection rate, implementation cost, privacy exposure, or compliance performance.",
+"No vendor has been selected, meaning vendor-specific security, data-retention, model-performance, contractual, and integration characteristics cannot yet be assessed.",
+"The April 2026 interagency Revised Guidance on Model Risk Management explicitly states that generative AI and agentic AI models are outside its formal scope, so its traditional model-risk requirements should not be presented as directly applicable regulatory requirements for this system."
+],
+"confidence_and_uncertainty": "Confidence is high that immediate production adoption would be premature and moderate-to-high that a carefully governed pilot could become reasonable after prerequisite evidence and controls are established. The largest uncertainty is organization-specific rather than technological: there is currently no reliable evidence about model performance on the institution's actual support cases, reviewer effectiveness, privacy and compliance performance, vendor characteristics, implementation cost, or realized productivity benefit.",
+"value_opportunity_implication": "The technology presents a credible opportunity to reduce drafting time and employee workload while potentially helping representatives formulate responses more efficiently. Because external customer-support research has demonstrated productivity improvements, management should preserve the option to experiment rather than reject the technology outright. The institution should evaluate value using its own representative support cases and measure response-drafting time, employee productivity, response quality, correction rates, and user experience against the existing workflow.",
+"risk_governance_implication": "Before exposing real customer communications or sensitive customer information to a generative-AI workflow, the institution should establish governance appropriate to the application's consequences. At minimum, management should define approved use cases, prohibited uses, data-handling requirements, vendor-security and privacy requirements, human-review procedures, escalation paths, evaluation datasets, error categories, logging and monitoring requirements, compliance review, and explicit acceptance thresholds. Human review should be tested rather than assumed to be an effective safeguard, particularly for plausible but incorrect model outputs.",
+"recommendation_management_implication": "DEFER. Do not move directly to production adoption or immediately launch a customer-data pilot under the current conditions. During the next 12 months, first establish the prerequisites for a bounded experiment: select and assess a candidate vendor or technical approach; obtain compliance, privacy, security, and risk review; build a representative evaluation set; define minimum accuracy and risk thresholds; test whether human reviewers reliably detect consequential errors; establish monitoring and escalation procedures; and determine the staff capacity required to supervise a pilot. If those prerequisites are satisfied, management should reconsider the posture and may advance to a small, reversible BOUNDED EXPERIMENT / PILOT in which AI only drafts responses, trained employees approve every response, sensitive use cases are excluded initially, performance is logged, and explicit stop conditions are enforced.",
+"change_monitoring_triggers": [
+"A candidate system demonstrates predefined minimum accuracy and acceptable consequential-error rates on a representative set of the institution's historical customer-support cases.",
+"Testing demonstrates that human reviewers detect and correct a predefined acceptable percentage of material factual, compliance, privacy, and policy errors before messages are sent.",
+"Compliance, privacy, information-security, and risk functions approve a documented limited-use design and identify no unresolved barrier that makes the pilot unacceptable.",
+"A vendor demonstrates acceptable data-retention, confidentiality, security, auditability, contractual, and model-monitoring controls for the institution's intended use.",
+"Management defines quantitative pilot success thresholds for productivity, response quality, error rates, escalation rates, customer impact, and cost before testing begins.",
+"The organization establishes sufficient trained staff, logging, monitoring, incident-response procedures, and stop conditions to supervise a limited pilot.",
+"Organization-specific testing demonstrates a meaningful productivity or service-quality advantage over the existing workflow after the cost of human review, governance, vendor services, and implementation is included.",
+"New regulatory guidance, supervisory expectations, industry standards, or material evidence concerning generative AI in financial-services customer communications changes the institution's compliance or risk assessment."
+],
+"abstention_or_more_information_needed": [
+"Organization-specific benchmark results for factual accuracy, hallucination frequency, policy compliance, and response quality.",
+"Measured effectiveness of customer-service representatives at identifying and correcting consequential model errors.",
+"Vendor-specific information covering model architecture or service design, security, privacy, customer-data use, retention, training-data policies, auditability, contractual protections, service levels, and monitoring capabilities.",
+"Compliance and legal review of the proposed workflow and the specific categories of customer communications that may or may not be appropriate for AI-assisted drafting.",
+"A documented definition of acceptable error rates and escalation thresholds based on the severity of different customer-support scenarios.",
+"Estimated implementation, licensing, integration, governance, monitoring, and employee-review costs compared with expected productivity benefits.",
+"Evidence that sufficient trained personnel and governance capacity are available to monitor a bounded pilot responsibly."
+]
+}

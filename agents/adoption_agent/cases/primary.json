@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Generative AI using large language models",
+  "intended_application": "Draft customer-support responses for human review before they are sent to customers",
+  "organization": "Large national retail bank",
+  "industry_sector": "Financial services and banking",
+  "business_need": "Reduce customer-support response time and employee workload while maintaining service quality, accuracy, and regulatory compliance",
+  "users_stakeholders": "Customer service representatives, customers, compliance officers, risk management teams, information security teams, IT staff, and senior management",
+  "adoption_posture": "Conservative and risk-averse",
+  "capabilities_constraints": "The organization has strong IT, cybersecurity, and compliance capabilities, but operates under strict regulatory requirements. Customer-facing communications require high accuracy, strong privacy protections, auditable processes, and human oversight. The organization has limited tolerance for incorrect or misleading financial information.",
+  "risk_consequence_context": "Incorrect, misleading, biased, or privacy-compromising responses could cause regulatory violations, customer harm, financial losses, operational disruption, and reputational damage. However, a limited internal pilot with mandatory human review would make experimentation relatively reversible and reduce direct customer exposure.",
+  "management_question": "Should the organization adopt, conduct a bounded experiment with, monitor, defer, or reject generative AI for customer-support response drafting at this time?",
+  "time_horizon": "Management is deciding what action to take during the next 12 months",
+  "additional_context": "Management is interested in the potential productivity benefits of generative AI but does not want fully autonomous customer-facing deployment. A controlled pilot involving a limited group of customer-service representatives is possible if appropriate safeguards, success criteria, and human review are established."
+}
